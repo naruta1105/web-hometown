@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    width: 100%;
+    float: left;
+}
+
+.col-l-0 {
+    width: 0%;
+    display: none;
+}
+
+.col-l-1 {
+    width: 8.33%;
+}
+
+.col-l-2 {
+    width: 16.66%;
+}
+
+.col-l-3 {
+    width: 25%;
+}
+
+.col-l-4 {
+    width: 33.33%;
+}
+
+.col-l-5 {
+    width: 41.66%;
+}
+
+.col-l-6 {
+    width: 50%;
+}
+
+.col-l-7 {
+    width: 58.33%;
+}
+
+.col-l-8 {
+    width: 66.66%;
+}
+
+.col-l-9 {
+    width: 75%;
+}
+
+.col-l-10 {
+    width: 83.33%;
+}
+
+.col-l-11 {
+    width: 91.66%;
+}
+
+.col-l-12 {
+    width: 100%;
+}
+
+.page {
+    width: fit-content;
+    height: fit-content;
+    margin: 0px auto;
+}
+
+header {
+    margin: 0px auto;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+nav {
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+nav>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+li>a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.nav-left {
+    text-align: left;
+}
+
+.nav-right {
+    text-align: right;
+}
+
+summary {
+    width: 100%;
+    height: fit-content;
+    margin: 0px auto;
+    position: relative;
+    background-color: #DCDCDC;
+}
+
+summary>img {
+    max-width: 100%;
+    height: auto;
+}
+
+.summary-text {
+    position: absolute;
+    left: 7%;
+    top: 25%;
+    width: fit-content;
+    color: white;
+    font-family: sans-serif;
+}
+
+.summary-text>h1 {
+    font-size: 42px;
+    line-height: 0;
+}
+
+.summary-text>p {
+    font-size: 20px;
+}
+
+article {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 5%;
+    background-color: #DCDCDC;
+}
+
+.article-text {
+    margin: 5% 2%;
+    font-family: sans-serif;
+}
+
+.article-text>h2 {
+    font-size: 36px;
+    line-height: 0;
+}
+
+.article-text>p {
+    font-size: 16px;
+}
+
+.article-image,
+.footer-text {
+    width: 96%;
+    height: 100%;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.image-col {
+    position: relative;
+    float: left;
+    width: 32%;
+    height: 550px;
+}
+
+.between-col {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.image-col>img {
+    width: 100%;
+    height: 48%;
+}
+
+.row-2-image {
+    position: absolute;
+    bottom: 0px;
+}
+
+#col-one-image {
+    height: 100%;
+    width: 100%;
+}
+
+footer {
+    overflow: hidden;
+    width: 100%;
+    height: fit-content;
+    background-color: #FFF5EE;
+}
+
+.col-text {
+    float: left;
+    width: 32%;
+    height: fit-content;
+}
+
+.col-text>h4 {
+    font-size: 32px;
+    line-height: 0;
+}
+
+.col-text>p {
+    font-size: 16px;
+}
+
+.col-text>a {
+    font-size: 16px;
+}
