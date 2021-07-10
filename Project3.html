@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" media='only screen and (min-width: 992px)' href="pc.css" />
+    <link rel="stylesheet" media='only screen and (min-width: 768px) and (max-width: 992px)' href="tablet.css" />
+    <link rel="stylesheet" media='only screen and (max-width: 768px)' href="mobile.css" />
+    <title>My First HTML5 Page</title>
+</head>
+
+<body>
+    <div class="page">
+        <!--Header-->
+        <header>
+            <nav>
+                <ul class="row">
+                    <li class="nav-width  col-m-1 col-l-1">
+                        <a href="#" class="nav-left">Brand</a>
+                    </li>
+                    <li class="nav-width col-m-1 col-l-1"><a href="#" class="nav-left">Browse</li></li>
+                    <div class="col-s-0 col-m-7 col-l-7" style="height: 1px;"></div>
+                    <li class="nav-width col-m-1 col-l-1" >
+                        <a href="signin.html" class="nav-right">Sign Up</a>
+                    </li>
+                    <li class="nav-width col-m-1 col-l-1"><a href="login.html" class="nav-right">Log In</a></li>
+                    <li class="nav-width col-m-1 col-l-1"><a href="#" class="nav-right">Help</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Summary-->
+        <summary>
+            <img src="images/lodging.png">
+            <div class="summary-text">
+                <h1>Find a place to stay.</h1>
+                <p>Rent from people in over 34,000 cities and 192 countries.</p>
+            </div>
+        </summary>
+
+        <!--Article-->
+        <article>
+            <div class="article-text">
+                <h2>Neighborhood Guides</h2>
+                <p>Not sure where to stay? We've create neighborhood guides for cities all around the world.</p>
+            </div>
+            <div class="article-image row">
+                <div class="image-col">
+                    <img src="images/mexico-city.png"><br>
+                    <img class="row-2-image" src="images/ny.png"><br>
+                </div>
+                <div class="image-col between-col">
+                    <img src="images/tokyo.png"><br>
+                    <img class="row-2-image" src="images/paris.png"><br>
+                </div>
+                <div class="image-col">
+                    <img id="col-one-image" src="images/invite.png"><br>
+                </div>
+            </div>
+        </article>
+
+        <!--footer-->
+        <footer>
+            <div class="footer-text row">
+                <div class="col-text">
+                    <h4>Travel</h4>
+                    <p>From apartments and rooms to treehouses and boats: stay in unique spaces in 192 countries.</p>
+                    <a href="#">
+                        <p>See how to travel on Airbnb</p>
+                    </a>
+                </div>
+                <div class="col-text between-col">
+                    <h4>Host</h4>
+                    <p>Renting out your unused space could pay your billsor fund your next vacation.</p>
+                    <a href="#">
+                        <p>Learn more about hosting</p>
+                    </a>
+                </div>
+                <div class="col-text">
+                    <h4>Trust and Safety</h4>
+                    <p>From Verified ID to our worldwide customer support team, we've got your back.</p>
+                    <a href="#">
+                        <p>Learn about trust at Airbnb</p>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

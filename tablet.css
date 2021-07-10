@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    width: 100%;
+    float: left;
+}
+
+.col-m-0 {
+    width: 0%;
+    display: none;
+}
+
+.col-m-1 {
+    width: 8.33%;
+}
+
+.col-m-2 {
+    width: 16.66%;
+}
+
+.col-m-3 {
+    width: 25%;
+}
+
+.col-m-4 {
+    width: 33.33%;
+}
+
+.col-m-5 {
+    width: 41.66%;
+}
+
+.col-m-6 {
+    width: 50%;
+}
+
+.col-m-7 {
+    width: 58.33%;
+}
+
+.col-m-8 {
+    width: 66.66%;
+}
+
+.col-m-9 {
+    width: 75%;
+}
+
+.col-m-10 {
+    width: 83.33%;
+}
+
+.col-m-11 {
+    width: 91.66%;
+}
+
+.col-m-12 {
+    width: 100%;
+}
+
+.page {
+    width: initial;
+    margin: 0px auto;
+}
+
+header {
+    margin: 0px auto 0px;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: lightslategrey;
+}
+
+nav {
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+nav>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+li>a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.nav-left {
+    text-align: left;
+}
+
+.nav-right {
+    text-align: right;
+}
+
+summary {
+    width: 92%;
+    height: 25vw;
+    margin: 0px 4%;
+    position: relative;
+    border-bottom: 2px solid #F8F8FF;
+}
+
+summary>img {
+    display: none;
+}
+
+.summary-text {
+    position: absolute;
+    top: 25%;
+    width: fit-content;
+    color: black;
+    font-family: sans-serif;
+}
+
+.summary-text>p {
+    margin-top: 15%;
+}
+
+.summary-text>h1,
+.article-text>h2,
+.col-text>h4 {
+    font-size: 4vw;
+    line-height: 0;
+}
+
+.summary-text>p,
+.article-text>p,
+.col-text>p {
+    font-size: 2vw;
+}
+
+article {
+    overflow: hidden;
+    width: 92%;
+    height: fit-content;
+    margin: 0px 4%;
+}
+
+.article-text {
+    margin-top: 10%;
+    font-family: sans-serif;
+}
+
+.article-image {
+    width: 100%;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.image-col {
+    float: left;
+    width: 48%;
+    margin: 0px 1%;
+    height: 50%;
+}
+
+.image-col>img {
+    margin-top: 10%;
+    width: 100%;
+    height: auto;
+}
+
+#col-one-image {
+    height: 100%;
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    height: fit-content;
+}
+
+.col-text {
+    margin: 5% 4% 0%;
+    font-family: sans-serif;
+}
+
+.col-text>a {
+    font-size: 2vw;
+}
