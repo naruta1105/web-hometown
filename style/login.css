@@ -1,11 +1,12 @@
 body {
-    background-image: url('images/beach-background.jpg');
+    background-image: url('images/beach-background3.png');
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 
 .log-in-page {
-    margin-top: 100px;
+    margin-top: 150px;
     max-width: 400px;
     height: fit-content;
     border-style: inset outset;
@@ -49,6 +50,7 @@ form [type="checkbox"] {
 
 #social a {
     width: 100%;
+    padding: 0;
 }
 
 #social .btn-facebook {
@@ -62,13 +64,13 @@ form [type="checkbox"] {
 #social i {
     display: inline-block;
     text-align: left;
-    width: 10%;
+    width: 5%;
     margin: 0;
 }
 
 #social p {
     display: inline-block;
-    text-align: center;
+    text-align: left;
     width: 80%;
     margin: 0;
 }
