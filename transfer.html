@@ -9,10 +9,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Add Font library -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <!-- External CSS -->
     <link rel="stylesheet" href="style/home.css" />
     <title>Home Page</title>
@@ -23,64 +19,44 @@
         <!--Header-->
         <!--g-0 + no container will make no padding or margin between col-->
         <header class="row g-0">
-            <div id="web-name" class="col-10 col-md-6 col-lg-4 row g-0">
-                <div id="logo" class="col-3 col-md-4 border">
-                    <h5>TXD</h5>
+            <div class="col-lg-4 row">
+                <div id="logo" class="col-lg-4">
+                    <h5>txD</h5>
                 </div>
-                <div class="col-9 col-md-8">
+                <div class="col-lg-8">
                     <h1>Vũng Tàu</h1>
                 </div>
             </div>
-            <nav class="d-none d-md-flex col-md-4 col-lg-8 row g-0">
-                <ul class="d-none d-lg-flex col-lg-8 row g-0 nav1">
-                    <li class="col-lg-3 d-none"><a href="home.html">Trang chủ</a></li>
-                    <li class="col-lg-3"><a href="travel.html">Du lịch</a></li>
-                    <li class="col-lg-2"><a href="transfer.html">Xe</a></li>
-                    <li class="col-lg-3"><a href="food.html">Đặc sản</a></li>
-                    <li class="col-lg-3"><a href="contact.html">Liên Hệ</a></li>
+            <nav class="row g-0 col-lg-8">
+                <ul class="row g-0 col-lg-10 nav1">
+                    <li class="col-lg-2"><a href="home.html">Trang chủ</a></li>
+                    <li class="col-lg-2"><a href="travel.html">Du lịch</a></li>
+                    <li class="col-lg-1 d-none"><a href="transfer.html">Xe</a></li>
+                    <li class="col-lg-2"><a href="food.html">Đặc sản</a></li>
+                    <li class="col-lg-2"><a href="contact.html">Liên Hệ</a></li>
                 </ul>
-                <ul class="d-none d-md-flex col-md-12 col-lg-4 row g-0 nav2">
-                    <li class="d-none d-md-block col-md-6 col-lg-6"><a href="register.html">Đăng kí</a></li>
-                    <li class="d-none d-md-block col-md-6 col-lg-6 "><a href="login.html">Đăng nhập</a></li>
+                <ul class="row g-0 col-lg-2 nav2">
+                    <li class="col-lg"><a href="register.html" class="nav-right">Đăng kí</a></li>
+                    <li class="col-lg"><a href="login.html" target="_top">Đăng nhập</a></li>
                 </ul>
             </nav>
-            <!--Drop Down Menu when tablet or mobile-->
-            <div class="col-2 col-md-2 d-lg-none dropdown g-0 navbutton border">
-                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa fa-bars" aria-hidden="true"></i>
-                </button>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item d-none" href="home.html">Trang chủ</a></li>
-                    <li><a class="dropdown-item active" href="travel.html">Du lịch</a></li>
-                    <li><a class="dropdown-item" href="transfer.html">Xe</a></li>
-                    <li><a class="dropdown-item" href="food.html">Đặc sản</a></li>
-                    <li><a class="dropdown-item" href="contact.html">Liên Hệ</a></li>
-                    <li class="d-md-none">
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li class="d-md-none"><a class="dropdown-item" href="register.html">Đăng kí</a></li>
-                    <li class="d-md-none"><a class="dropdown-item" href="login.html">Đăng nhập</a></li>
-                </ul>
-            </div>
         </header>
         <!--/Header-->
         <!--Main-->
         <main>
-            <div id="banner">
-                <h1>Chào mừng đến với xứ biển Vũng Tàu</h1>
-            </div>
-            <div id="white-bg" class="d-none d-md-block">
+            <div id="banner"></div>
+            <div id="white-bg">
                 <!--g-lg-2= gutter(x,y)=2, gx-2=gutter(x)=2, mt-lg-2=margin top=2-->
                 <!--using gutter can make element float=> overflow-hidden-->
                 <div class="container overflow-hidden margin_60">
-                    <div class="row g-md-2">
-                        <a class="col-md-6" href="#">
-                            <img src="style/images/ho_tram.jpeg">
-                        </a>
-                        <div class="col-md-6 row gx-md-2 gy-md-1 row-cols-md-2">
-                            <a class="col-md" href="#"><img src="style/images/suoi-nuoc-nogn.png"></a>
-                            <a class="col-md" href="#"><img src="style/images/bai_sau_vung_tau.jpeg"></a>
-                            <a class="col-md-12 mt-md-2" href="#"><img src="style/images/ho_tay_banner.jpeg"></a>
+                    <div class="row g-lg-2">
+                        <div class="col-lg-6">
+                            <img src="style/images/ho_tram.jpeg" style="width: 100%; height:100%;">
+                        </div>
+                        <div class="col-lg-6 row gx-lg-2 gy-1 row-cols-lg-2">
+                            <img class="col-lg" src="style/images/suoi-nuoc-nogn.png">
+                            <img class="col-lg" src="style/images/bai_sau_vung_tau.jpeg">
+                            <img class="col-lg-12 mt-lg-2" src="style/images/ho_tay_banner.jpeg">
                         </div>
                     </div>
                 </div>
@@ -88,39 +64,39 @@
             <article>
                 <div class="container overflow-hidden margin_60">
                     <div class="main_title">
-                        <h2>Cảnh Quan</h2>
+                        <h2>Địa điểm thăm quan</h2>
                         <p>Địa điểm tuyệt vời để khám phá vẻ đẹp Vũng Tàu</p>
                     </div>
-                    <div class="container list_item row row-cols-3 row-cols-md-1 row-cols-lg-1 g-0 g-md-2">
-                        <div class="col-12 col-md-6 col-lg-4 item">
+                    <div class="list_item row">
+                        <div class="col-lg-4 item">
                             <img src="style/images/god.jpg">
                             <p> Tượng Chua giang tay </p>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 item">
+                        <div class="col-lg-4 item">
                             <img src="style/images/Hon-ba.jpeg">
                             <p> Hòn Bà </p>
                         </div>
-                        <div class="col-12 d-md-none d-lg-block col-lg-4 item">
+                        <div class="col-lg-4 item">
                             <img src="style/images/suoi-tien.jpeg">
                             <p> Suối Tiên </p>
                         </div>
                     </div>
                     <p class="text-center"><a href="#" class="btn btn-primary" role="button">Xem thêm các khu du lịch</a></p>
-                    <hr class="mt-2 mb-2 mt-md-3 mb-md-3 mt-lg-5 mb-lg-5">
+                    <hr class="mt-lg-5 mb-lg-5">
                     <div class="main_title">
                         <h2>Đặc sản Vũng Tàu</h2>
                         <p>Món ăn Vũng Tàu nhất định phải thử</p>
                     </div>
-                    <div class="container list_item row row-cols-3 row-cols-md-1 row-cols-lg-1 g-0 g-md-2">
-                        <div class="col-12 col-md-6 col-lg-4 item">
+                    <div class="list_item row">
+                        <div class="col-lg-4 item">
                             <img src="style/images/banh_khot.jpg" style="height:90%;">
                             <p> Bánh khọt </p>
                         </div>
-                        <div class="col-12 d-md-none d-lg-block col-lg-4 item">
+                        <div class="col-lg-4 item">
                             <img src="style/images/bong-lan-trung-muoi.jpg">
                             <p> Bánh bông lan trứng muối </p>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 item">
+                        <div class="col-lg-4 item">
                             <img src="style/images/hai-san.jpg">
                             <p> Hải sản </p>
                         </div>
@@ -133,17 +109,17 @@
         <!--Footer-->
         <footer class="revealed">
             <div class="container">
-                <div class="row row-cols-3 row-cols-md-1">
-                    <div class="col-12 col-md-4 col-lg-4">
-                        <div class="col-left-text col-md-left-text col-lg-left-text ">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="col_left_text">
                             <h3>Cần trợ giúp</h3>
                             <h6>0978237004</h6>
                             <h6>dien.tranxuan110594@gmail.com</h6>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 col-lg-4">
-                        <div class="col-center-text col-md-center-text col-lg-center-text ">
-                            <h3>Về chúng tôi</h3>
+                    <div class="col-lg-4">
+                        <div class="col_center_text">
+                            <h3>About</h3>
                             <a href="login.html">
                                 <h6>Đăng kí</h6>
                             </a>
@@ -155,8 +131,8 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 col-lg-4">
-                        <div class="col-right-text col-md-right-text col-lg-right-text">
+                    <div class="col-lg-4">
+                        <div class="col_right_text">
                             <h3>Khám phá</h3>
                             <a href="travel.html">
                                 <h6>Du lịch</h6>
@@ -170,39 +146,51 @@
                         </div>
                     </div>
                 </div>
-                <hr class="mt-3 mb-3">
+                <hr class="mt-lg-3 mb-lg-3">
                 <div class="row">
-                    <div class="col-12">
-                        <div id="social_list" class="row">
+                    <div class="col-lg-12">
+                        <div id="social_list" class="mx-lg-auto">
                             <ul style="text-align: center;">
-                                <li class="col-1">
+                                <li>
                                     <a href="https://www.facebook.com/" class="fa fa-facebook-f"></a>
                                 </li>
-                                <li class="col-1">
+                                <li>
                                     <a href="#" class="fa fa-twitter"></a>
                                 </li>
-                                <li class="col-1">
+                                <li>
                                     <a href="#" class="fa fa-google"></a>
                                 </li>
-                                <li class="col-1">
+                                <li>
                                     <a href="#" class="fa fa-instagram"></a>
                                 </li>
-                                <li class="col-1">
-                                    <a href="#" class="fa fa-linkedin"></a>
+                                <li>
+                                    <a href="#" class="fa fa-linkedin-in"></a>
                                 </li>
-                                <li class="col-1">
+                                <li>
                                     <a href="#" class="fa fa-pinterest"></a>
                                 </li>
-                                <li class="col-1">
+                                <li>
+                                    <a href="#" class="fa fa-vk"></a>
+                                </li>
+                                <li>
                                     <a href="#" class="fa fa-stack-overflow"></a>
                                 </li>
-                                <li class="col-1">
+                                <li>
                                     <a href="#" class="fa fa-youtube"></a>
                                 </li>
-                                <li class="col-1">
+                                <li>
+                                    <a href="#" class="fa fa-slack-hash"></a>
+                                </li>
+                                <li>
                                     <a href="#" class="fa fa-github"></a>
                                 </li>
-                                <li class="col-1">
+                                <li>
+                                    <a href="#" class="fa fa-dribbble"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fa fa-reddit-alien"></a>
+                                </li>
+                                <li>
                                     <a href="#" class="fa fa-whatsapp"></a>
                                 </li>
                             </ul>

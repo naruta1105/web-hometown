@@ -5,32 +5,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="register.css">
-    <title>Document</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" media='only screen and (min-width: 992px)' href="style/register.css" />
+    <link rel="stylesheet" media='only screen and (min-width: 769px) and (max-width: 991px)' href="style/register.css" />
+    <link rel="stylesheet" media='only screen and (max-width: 768px)' href="style/register.css" />
+
+    <title>Register Page</title>
 </head>
 
 <body>
-    <div id="login-box">
-        <div class="left">
-            <h1>Sign up</h1>
+    <div class="register-page mx-auto">
+        <header>
+            <h1>Đăng kí</h1>
+        </header>
+        <main>
+            <div class="width_90 my-3">
+                <form action="#" method="post" autocomplete="on">
+                    <label for="username">Tên đăng nhập</label>
+                    <input id="username" name="username" type="email" placeholder="Tên đăng nhập" required/>
 
-            <input type="text" name="username" placeholder="Username" />
-            <input type="text" name="email" placeholder="E-mail" />
-            <input type="password" name="password" placeholder="Password" />
-            <input type="password" name="password2" placeholder="Retype password" />
+                    <label for="username">Email</label>
+                    <input id="username" name="username" type="email" placeholder="name@example.com" required/>
 
-            <input type="submit" name="signup_submit" value="Sign me up" />
-        </div>
+                    <label for="password">Mật khẩu</label>
+                    <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" required/>
 
-        <div class="right">
-            <span class="loginwith">Sign in with<br />social network</span>
+                    <label for="confirm_password">Nhập lại mật khẩu</label>
+                    <input id="confirm_password" name="password" type="password" placeholder="Nhập lại mật khẩu" required/>
 
-            <button class="social-signin facebook">Log in with facebook</button>
-            <button class="social-signin twitter">Log in with Twitter</button>
-            <button class="social-signin google">Log in with Google+</button>
-        </div>
-        <div class="or">OR</div>
+                    <button class="btn btn-success" type="submit" value="Register">Tạo tài khoản</button>
+                    <a class="btn btn-secondary" href="home.html" role="button">Quay lại</a>
+                </form>
+            </div>
+        </main>
+
     </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>

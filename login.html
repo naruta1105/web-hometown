@@ -1,65 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" media='only screen and (min-width: 992px)' href="style/login.css" />
+    <link rel="stylesheet" media='only screen and (min-width: 769px) and (max-width: 991px)' href="style/login.css" />
+    <link rel="stylesheet" media='only screen and (max-width: 768px)' href="style/login.css" />
+
     <title>Login Page</title>
-    <!--Made with love by Mutiullah Samim -->
-
-    <!--Bootsrap 4 CDN-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-    <!--Fontawesome CDN-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
-    <!--Custom styles-->
-    <link rel="stylesheet" type="text/css" href="login.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="d-flex justify-content-center h-100">
-            <div class="card">
-                <div class="card-header">
-                    <h3>Sign In</h3>
-                    <div class="d-flex justify-content-end social_icon">
-                        <span><i class="fab fa-facebook-square"></i></span>
-                        <span><i class="fab fa-google-plus-square"></i></span>
-                        <span><i class="fab fa-twitter-square"></i></span>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <form>
-                        <div class="input-group form-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-user"></i></span>
-                            </div>
-                            <input type="text" class="form-control" placeholder="username">
+    <div class="log-in-page mx-auto">
+        <header>
+            <h1>Đăng nhập</h1>
+        </header>
+        <main>
+            <div class="width_90 my-3">
+                <form action="#" method="post" autocomplete="on">
+                    <label for="username">Tên đăng nhập hoặc email</label>
+                    <input id="username" name="username" type="email" placeholder="name@example.com" required/>
 
-                        </div>
-                        <div class="input-group form-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-key"></i></span>
-                            </div>
-                            <input type="password" class="form-control" placeholder="password">
-                        </div>
-                        <div class="row align-items-center remember">
-                            <input type="checkbox">Remember Me
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" value="Login" class="btn float-right login_btn">
-                        </div>
-                    </form>
-                </div>
-                <div class="card-footer">
-                    <div class="d-flex justify-content-center links">
-                        Don't have an account?<a href="#">Sign Up</a>
+                    <label for="password">Mật khẩu</label>
+                    <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" required/>
+
+                    <div class="row mx-0 mb-3">
+                        <label class="col p-0" for="remember"><input id="remember" name="remember" type="checkbox">Lưu thông tin</label>
+                        <a class="col p-0" href="#" style="text-align: right;"><i>Quên mật khẩu?</i></a>
                     </div>
-                    <div class="d-flex justify-content-center">
-                        <a href="#">Forgot your password?</a>
-                    </div>
-                </div>
+
+
+                    <button class="btn btn-outline-success" type="submit" value="Login">Đăng nhập</button>
+                    <a class="btn btn-outline-secondary" href="home.html" role="button">Quay lại</a>
+                </form>
             </div>
-        </div>
+            <p class="text-center">Hoặc</p>
+            <div id="social" class="width_90 p-0">
+                <a class="mb-3 btn btn-primary btn-facebook" href="#" role="button">
+                    <i class="fa fa-facebook"></i>
+                    <p>Đăng nhập bằng facebook</p>
+                </a>
+                <a class="btn btn-primary btn-google" href="#" role="button">
+                    <i class="fa fa-google"></i>
+                    <p>Đăng nhập bằng gmail</p>
+                </a>
+            </div>
+            <p class="text-center mt-3">Chưa đăng kí tài khoản?<a href="register.html "> Đăng kí ngay</a></p>
+        </main>
+
     </div>
 </body>
 
