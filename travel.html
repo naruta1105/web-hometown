@@ -14,7 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <!-- External CSS -->
+    <link rel="stylesheet" href="style/header.css" />
     <link rel="stylesheet" href="style/travel.css" />
+    <link rel="stylesheet" href="style/footer.css" />
     <title>Travel</title>
 </head>
 
@@ -67,76 +69,74 @@
         <!--Main-->
         <main>
             <section id="banner">
-                <h1>Bạn muốn liên hệ với chúng tôi?</h1>
             </section>
-            <article id="white-bg" class="mt-5 mx-auto container row g-0">
-                <section class="col-12 col-md-8 container">
-                    <div class="row g-0">
-                        <div class="col-12 text-left">
-                            <h1>Điền thông tin</h1>
-                            <p>Vui lòng cung cấp thông tin theo mẫu dưới đây</p>
-                        </div>
-
-                        <form action="#" method="GET" autocomplete="on" class="col-12 mx-2 row">
-                            <label for="last_name" class="col-12 col-md-6">
-                                <p class="my-0">Họ</p>
-                                <input class="w-100" type="text" name="username" id="last_name">
-                            </label>
-                            <label for="first_name" class="col-12 col-md-6">
-                                <p class="my-0">Tên</p>
-                                <input class="w-100" type="text" name="username" id="first_name">
-                            </label>
-                            <label for="email" class="col-12 col-md-6">
-                                <p class="my-0">Email</p>
-                                <input class="w-100" type="email" name="email" id="email" placeholder="name@example.com" required>
-                            </label>
-                            <label for="phone" class="col-12 col-md-6">
-                                <p class="my-0">Số điện thoại</p>
-                                <input class="w-100" type="tel" name="phone" id="phone" placeholder="0909-xxx-xxx" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}">
-                            </label>
-                            <label for="message" class="col-12">
-                                <p class="my-0">Tin nhắn</p>
-                                <input class="w-100" type="text" name="message" id="message" style="height: 120px;" autocomplete="off" required>
-                            </label>
-
-                            <label for="verification" class="col-12 col-md-6">
-                                <p class="my-0">Xác nhận không phải người máy</p>
-                                <input class="w-100" type="text" name="verification" id="verification" autocomplete="off" placeholder="3+1x5-6=?">
-                            </label>
-
-                            <div class="col-12 container">
-                                <div class="row justify-content-md-center">
-                                    <button class="col-5 col-md-3 btn btn-success " type="submit" value="send">Gửi đi</button>
-                                    <div class="col-1 col-md-2"></div>
-                                    <a class="col-5 col-md-3 btn btn-secondary" href="home.html" role="button">Quay lại</a>
-                                </div>
-                            </div>
-                        </form>
+            <article id="white-bg" class="container">
+                <section class="container pt-5">
+                    <h1 class="text-center mb-5">Lý do nên đến Vũng Tàu?</h1>
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gy-3">
+                        <article class="col text-center">
+                            <h2>Biển sạch</h2>
+                            <p>Nước biển sạch và trong nên tha hồ vẫy vùng, kể cả những ngày cuối tuần.</p>
+                        </article>
+                        <article class="col text-center">
+                            <h2>Khách sạn</h2>
+                            <p>Không những được đảm bảo được các Khách sạn quan tâm, chăm sóc nhất và đặc biêt là giá cả rất vừa phải.</p>
+                        </article>
+                        <article class="col text-center">
+                            <h2>Thân thiện</h2>
+                            <p>Người dân ở đây vừa thân thiện lại dễ thương. Vì thế bạn sẽ muốn kì nghỉ kéo dài bất tận để được tận hưởng cuộc sống ở đây.</p>
+                        </article>
+                        <article class="col text-center">
+                            <h2>Nhiều lễ hội</h2>
+                            <p>Nếu bạn chọn Vũng Tàu là nơi sẽ đi du lịch thì sẽ rất tốn sức đấy. Ở đây có quá nhiều lễ hội hấp dẫn khiến bạn không thể chối từ.</p>
+                        </article>
                     </div>
                 </section>
-                <aside class="col-12 col-md-4 mx-auto container row">
-                    <section id="sidearticle01" class="col-12 pt-4 pb-4">
-                        <div>
-                            <h3>Địa chỉ</h3>
-                            <p>Thành Phố Bà Rịa, Tỉnh Bà Rịa Vũng Tàu</p>
-                        </div>
-                        <hr class="border">
-                        <div>
-                            <h3>Đường dây nóng</h3>
-                            <p>Chăm sóc khách hàng bên chúng tôi luôn sẵn sàng phục vụ.</p>
-                            <p>+84 923798694/ +84 962936992 </p>
-                            <p style="word-wrap: break-word;">dien.tranxuan110594@gmail.com</p>
-                        </div>
-                    </section>
-                    <section id="sidearticle02" class="col-12 text-center pt-4 pb-4 mt-4">
-                        <div>
-                            <i class="fa fa-user-circle-o fa-5x" aria-hidden="true"></i>
-                            <h3 class="mt-4">Cần trợ giúp gấp?</h3>
-                            <h6 class="my-4">+84 923798694</h6>
-                            <p>Thứ 2 đến thứ 3 <br> Từ 9h00 đến 10h00</p>
-                        </div>
-                    </section>
-                </aside>
+                <section class="py-5">
+                    <h1 class="text-center mb-5">Địa điểm du lịch</h1>
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 justify-content-center gy-5 list-image">
+                        <a class="col item" href="#">
+                            <img src="style/images/god.jpg">
+                            <h4>Tượng Chúa Ki-tô</h4>
+                        </a>
+                        <a class="col item" href="#">
+                            <img src="style/images/travel-bien-long-hai.jpeg">
+                            <h4>Biển Long Hải</h4>
+                        </a>
+                        <a class="col item" href="#">
+                            <img src="style/images/travel-bien-suoi-o.jpeg">
+                            <h4>Biển suối ồ</h4>
+                        </a>
+                        <a class="col item" href="#">
+                            <img src="style/images/travel-doi-con-heo.jpeg">
+                            <h4>Đồi con heo</h4>
+                        </a>
+                        <a class="col item" href="#">
+                            <img src="style/images/travel-dong-cuu.jpeg">
+                            <h4>Đồng cừu</h4>
+                        </a>
+                        <a class="col item" href="#">
+                            <img src="style/images/travel-hon-ba.jpeg">
+                            <h4>Hòn bà</h4>
+                        </a>
+                        <a class="col item" href="#">
+                            <img src="style/images/travel-hon-da-xanh.jpeg">
+                            <h4>Hòn đá xanh</h4>
+                        </a>
+                        <a class="col item" href="#">
+                            <img src="style/images/travel-mui-nghinh-phong.jpeg">
+                            <h4>Mũi Nghinh Phong</h4>
+                        </a>
+                        <a class="col item" href="#">
+                            <img src="style/images/tam-bun.png">
+                            <h4>Suối nước nóng Bình Châu</h4>
+                        </a>
+                        <a class="col item" href="#">
+                            <img src="style/images/bai_sau_vung_tau01.gif">
+                            <h4>Bãi sau</h4>
+                        </a>
+                    </div>
+                </section>
             </article>
         </main>
         <!--/Main-->

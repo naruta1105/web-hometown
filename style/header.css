@@ -77,8 +77,8 @@ header a {
     font-family: var(--font-name, Times);
     text-align: left;
     text-transform: uppercase;
-    color: black;
-    font-size: 30px;
+    color: palevioletred;
+    font-size: 25px;
     font-weight: bolder;
     text-shadow: 2px 2px 5px green;
 }
