@@ -190,12 +190,6 @@ main {
     height: 100%;
 }
 
-#white-bg img {
-    border-radius: 25px;
-    width: 100%;
-    height: 100%;
-}
-
 article {
     background-color: antiquewhite;
     animation-direction: alternate;
