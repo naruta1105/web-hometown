@@ -31,37 +31,39 @@
                     <h1>Vũng Tàu</h1>
                 </div>
             </div>
-            <nav class="d-none d-md-flex col-md-4 col-lg-8 row g-0">
+            <nav class="col-2 col-md-6 col-lg-8 row g-0">
+                <!--Menu Another Page-->
                 <ul class="d-none d-lg-flex col-lg-8 row g-0 nav1">
                     <li class="col-lg-3 d-none"><a href="home.html">Trang chủ</a></li>
-                    <li class="col-lg-3"><a href="travel.html">Du lịch</a></li>
+                    <li class="col-lg-3"><a href="travel.html">Điểm đến</a></li>
                     <li class="col-lg-2"><a href="transfer.html">Xe</a></li>
-                    <li class="col-lg-3"><a href="food.html">Đặc sản</a></li>
+                    <li class="col-lg-3"><a href="food.html">Ẩm thực</a></li>
                     <li class="col-lg-3"><a href="contact.html">Liên Hệ</a></li>
                 </ul>
-                <ul class="d-none d-md-flex col-md-12 col-lg-4 row g-0 nav2">
+                <!--Log In/ Register-->
+                <ul class="d-none d-md-flex col-md-8 col-lg-4 row g-0 nav2">
                     <li class="d-none d-md-block col-md-6 col-lg-6"><a href="register.html">Đăng kí</a></li>
                     <li class="d-none d-md-block col-md-6 col-lg-6 "><a href="login.html">Đăng nhập</a></li>
                 </ul>
+                <!--Navigation Button when tablet or mobile-->
+                <div class="col-12 col-md-4 d-lg-none dropdown g-0 navbutton">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item d-none" href="home.html">Trang chủ</a></li>
+                        <li><a class="dropdown-item active" href="travel.html">Điểm đến</a></li>
+                        <li><a class="dropdown-item" href="transfer.html">Xe</a></li>
+                        <li><a class="dropdown-item" href="food.html">Ẩm thực</a></li>
+                        <li><a class="dropdown-item" href="contact.html">Liên Hệ</a></li>
+                        <li class="d-md-none">
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li class="d-md-none"><a class="dropdown-item" href="register.html">Đăng kí</a></li>
+                        <li class="d-md-none"><a class="dropdown-item" href="login.html">Đăng nhập</a></li>
+                    </ul>
+                </div>
             </nav>
-            <!--Drop Down Menu when tablet or mobile-->
-            <div class="col-2 col-md-2 d-lg-none dropdown g-0 navbutton border">
-                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa fa-bars" aria-hidden="true"></i>
-                </button>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item d-none" href="home.html">Trang chủ</a></li>
-                    <li><a class="dropdown-item active" href="travel.html">Du lịch</a></li>
-                    <li><a class="dropdown-item" href="transfer.html">Xe</a></li>
-                    <li><a class="dropdown-item" href="food.html">Đặc sản</a></li>
-                    <li><a class="dropdown-item" href="contact.html">Liên Hệ</a></li>
-                    <li class="d-md-none">
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li class="d-md-none"><a class="dropdown-item" href="register.html">Đăng kí</a></li>
-                    <li class="d-md-none"><a class="dropdown-item" href="login.html">Đăng nhập</a></li>
-                </ul>
-            </div>
         </header>
         <!--/Header-->
         <!--Main-->
@@ -92,18 +94,18 @@
                         <p>Địa điểm tuyệt vời để khám phá vẻ đẹp Vũng Tàu</p>
                     </div>
                     <div class="container list_item row row-cols-3 row-cols-md-1 row-cols-lg-1 g-0 g-md-2">
-                        <div class="col-12 col-md-6 col-lg-4 item">
+                        <figure class="col-12 col-md-6 col-lg-4">
                             <img src="style/images/god.jpg">
-                            <p> Tượng Chua giang tay </p>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 item">
+                            <figcaption> Tượng Chua giang tay </figcaption>
+                        </figure>
+                        <figure class="col-12 col-md-6 col-lg-4">
                             <img src="style/images/Hon-ba.jpeg">
-                            <p> Hòn Bà </p>
-                        </div>
-                        <div class="col-12 d-md-none d-lg-block col-lg-4 item">
+                            <figcaption> Hòn Bà </figcaption>
+                        </figure>
+                        <figure class="col-12 d-md-none d-lg-block col-lg-4">
                             <img src="style/images/suoi-tien.jpeg">
-                            <p> Suối Tiên </p>
-                        </div>
+                            <figcaption> Suối Tiên </figcaption>
+                        </figure>
                     </div>
                     <p class="text-center"><a href="#" class="btn btn-primary" role="button">Xem thêm các khu du lịch</a></p>
                     <hr class="mt-2 mb-2 mt-md-3 mb-md-3 mt-lg-5 mb-lg-5">
@@ -112,18 +114,18 @@
                         <p>Món ăn Vũng Tàu nhất định phải thử</p>
                     </div>
                     <div class="container list_item row row-cols-3 row-cols-md-1 row-cols-lg-1 g-0 g-md-2">
-                        <div class="col-12 col-md-6 col-lg-4 item">
+                        <figure class="col-12 col-md-6 col-lg-4">
                             <img src="style/images/banh_khot.jpg" style="height:90%;">
-                            <p> Bánh khọt </p>
-                        </div>
-                        <div class="col-12 d-md-none d-lg-block col-lg-4 item">
+                            <figcaption> Bánh khọt </figcaption>
+                        </figure>
+                        <figure class="col-12 d-md-none d-lg-block col-lg-4">
                             <img src="style/images/bong-lan-trung-muoi.jpg">
-                            <p> Bánh bông lan trứng muối </p>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 item">
+                            <figcaption> Bánh bông lan trứng muối </figcaption>
+                        </figure>
+                        <figure class="col-12 col-md-6 col-lg-4">
                             <img src="style/images/hai-san.jpg">
-                            <p> Hải sản </p>
-                        </div>
+                            <figcaption> Hải sản </figcaption>
+                        </figure>
                     </div>
                     <p class="text-center"><a href="#" class="btn btn-primary" role="button">Xem thêm nhà hàng</a></p>
                 </div>

@@ -160,7 +160,7 @@ main #banner {
     display: block;
     width: 100%;
     height: 500px;
-    background-image: url('images/banner-vungtau.png');
+    background-image: url('images/beach-contact.jpeg');
     /* Center the image */
     background-position: center;
     /* Do not repeat the image */
@@ -184,48 +184,35 @@ main {
     background-color: white;
 }
 
-#white-bg img {
-    border-radius: 25px;
-    width: 100%;
-    height: 100%;
+#white-bg section {
+    margin-bottom: 20px;
 }
 
-#white-bg img {
-    border-radius: 25px;
-    width: 100%;
-    height: 100%;
+#white-bg form {
+    border-left: 5px inset gray;
+    border-bottom: 5px inset gray;
+    /*pb of form =mb of label */
+    padding-bottom: 20px;
 }
 
-article {
-    background-color: antiquewhite;
-    animation-direction: alternate;
+form label {
+    margin-bottom: 20px;
 }
 
-.main_title {
-    text-align: center;
-    font-size: 16px;
-    margin-bottom: 30px;
+#white-bg aside {
+    padding-bottom: 30px;
 }
 
-.list_item {
-    animation: 1s ease-out 0s 1 slideInFromRight;
+#white-bg #sidearticle01 {
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 10px;
 }
 
-figure {
-    transition: transform 1s;
-}
-
-figure img {
-    width: 100%;
-    height: 90%;
-}
-
-figure:hover {
-    transform: scale(1.1);
-}
-
-figure figcaption {
-    text-align: center;
+#white-bg #sidearticle02 {
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 10px auto;
 }
 
 footer {
@@ -275,7 +262,7 @@ footer a {
         height: fit-content;
         overflow: hidden;
     }
-    figure {
+    .item {
         width: 100%;
         height: 200px;
         margin-bottom: 20px;
@@ -309,7 +296,7 @@ footer a {
         height: 300px;
         padding-bottom: 30px;
     }
-    figure {
+    .item {
         height: 100%;
     }
     footer {
@@ -341,7 +328,7 @@ footer a {
         height: 400px;
         padding-bottom: 30px;
     }
-    figure {
+    .item {
         height: 100%;
     }
     footer {
