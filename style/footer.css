@@ -20,10 +20,11 @@ footer a {
     color: white;
 }
 
-footer h6 {
+footer p {
     text-decoration: none;
     color: white;
     word-wrap: break-word;
+    line-height: 1;
 }
 
 #social_list li {
@@ -68,6 +69,7 @@ footer h6 {
         width: fit-content;
         margin-left: auto;
         margin-right: auto;
+        text-align: center;
     }
     .col-md-right-text {
         width: fit-content;
@@ -92,6 +94,7 @@ footer h6 {
         width: fit-content;
         margin-left: auto;
         margin-right: auto;
+        text-align: center;
     }
     .col-lg-right-text {
         width: fit-content;

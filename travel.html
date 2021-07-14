@@ -9,15 +9,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Add Font library -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!--Improve SEO-->
+    <title>Cảnh đẹp Vũng Tàu: muôn màu muôn vẻ</title>
+    <meta name="description" conten="Thành phố biển Vũng Tàu có rất nhiêu cảnh đẹp từ núi, biển, đồng bằng và nhiều khu resort, du lịch để quý khách có thể lựa chọn và lưu được nhiều kỷ niệm đẹp">
     <!-- External CSS -->
     <link rel="stylesheet" href="style/header.css" />
     <link rel="stylesheet" href="style/travel.css" />
     <link rel="stylesheet" href="style/footer.css" />
-    <title>Địa điểm</title>
 </head>
 
 <body>
@@ -27,13 +25,14 @@
         <header class="row g-0">
             <div id="web-name" class="col-10 col-md-6 col-lg-4 row g-0">
                 <div id="logo" class="col-3 col-md-4 border">
-                    <h5>TXD</h5>
+                    <p id="logo-text">TXD</p>
                 </div>
                 <div class="col-9 col-md-8">
-                    <h1>Vũng Tàu</h1>
+                    <p id="logo-title">Vũng Tàu</p>
                 </div>
             </div>
-            <nav class="d-none d-md-flex col-md-4 col-lg-8 row g-0">
+            <nav class="col-2 col-md-6 col-lg-8 row g-0">
+                <!--Menu Another Page-->
                 <ul class="d-none d-lg-flex col-lg-8 row g-0 nav1">
                     <li class="col-lg-3"><a href="home.html">Trang chủ</a></li>
                     <li class="col-lg-3 d-none"><a href="travel.html">Điểm đến</a></li>
@@ -41,29 +40,30 @@
                     <li class="col-lg-3"><a href="food.html">Ẩm thực</a></li>
                     <li class="col-lg-3"><a href="contact.html">Liên Hệ</a></li>
                 </ul>
-                <ul class="d-none d-md-flex col-md-12 col-lg-4 row g-0 nav2">
+                <!--Log In/ Register-->
+                <ul class="d-none d-md-flex col-md-8 col-lg-4 row g-0 nav2">
                     <li class="d-none d-md-block col-md-6 col-lg-6"><a href="register.html">Đăng kí</a></li>
                     <li class="d-none d-md-block col-md-6 col-lg-6 "><a href="login.html">Đăng nhập</a></li>
                 </ul>
+                <!--Navigation Button when tablet or mobile-->
+                <div class="col-12 col-md-4 d-lg-none dropdown g-0 navbutton">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item active" href="home.html">Trang chủ</a></li>
+                        <li><a class="dropdown-item d-none" href="travel.html">Điểm đến</a></li>
+                        <li><a class="dropdown-item" href="#">Xe</a></li>
+                        <li><a class="dropdown-item" href="food.html">Ẩm thực</a></li>
+                        <li><a class="dropdown-item" href="contact.html">Liên Hệ</a></li>
+                        <li class="d-md-none">
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li class="d-md-none"><a class="dropdown-item" href="register.html">Đăng kí</a></li>
+                        <li class="d-md-none"><a class="dropdown-item" href="login.html">Đăng nhập</a></li>
+                    </ul>
+                </div>
             </nav>
-            <!--Drop Down Menu when tablet or mobile-->
-            <div class="col-2 col-md-2 d-lg-none dropdown g-0 navbutton">
-                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa fa-bars" aria-hidden="true"></i>
-                </button>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item active" href="home.html">Trang chủ</a></li>
-                    <li><a class="dropdown-item d-none" href="travel.html">Điểm đến</a></li>
-                    <li><a class="dropdown-item" href="#">Xe</a></li>
-                    <li><a class="dropdown-item" href="food.html">Ẩm thực</a></li>
-                    <li><a class="dropdown-item" href="contact.html">Liên Hệ</a></li>
-                    <li class="d-md-none">
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li class="d-md-none"><a class="dropdown-item" href="register.html">Đăng kí</a></li>
-                    <li class="d-md-none"><a class="dropdown-item" href="login.html">Đăng nhập</a></li>
-                </ul>
-            </div>
         </header>
         <!--/Header-->
         <!--Main-->
@@ -72,68 +72,68 @@
             </section>
             <article id="white-bg" class="container">
                 <section class="container pt-5">
-                    <h1 class="text-center mb-5">Lý do nên đến Vũng Tàu?</h1>
+                    <h2 class="text-center mb-5">Lý do nên đến Vũng Tàu?</h2>
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gy-3">
                         <article class="col text-center">
-                            <h2>Biển sạch</h2>
+                            <h3>Biển sạch</h3>
                             <p>Nước biển sạch và trong nên tha hồ vẫy vùng, kể cả những ngày cuối tuần.</p>
                         </article>
                         <article class="col text-center">
-                            <h2>Khách sạn</h2>
+                            <h3>Khách sạn</h3>
                             <p>Không những được đảm bảo được các Khách sạn quan tâm, chăm sóc nhất và đặc biêt là giá cả rất vừa phải.</p>
                         </article>
                         <article class="col text-center">
-                            <h2>Thân thiện</h2>
+                            <h3>Thân thiện</h3>
                             <p>Người dân ở đây vừa thân thiện lại dễ thương. Vì thế bạn sẽ muốn kì nghỉ kéo dài bất tận để được tận hưởng cuộc sống ở đây.</p>
                         </article>
                         <article class="col text-center">
-                            <h2>Nhiều lễ hội</h2>
+                            <h3>Nhiều lễ hội</h3>
                             <p>Nếu bạn chọn Vũng Tàu là nơi sẽ đi du lịch thì sẽ rất tốn sức đấy. Ở đây có quá nhiều lễ hội hấp dẫn khiến bạn không thể chối từ.</p>
                         </article>
                     </div>
                 </section>
                 <section class="py-5">
-                    <h1 class="text-center mb-5">Địa điểm du lịch</h1>
+                    <h2 class="text-center mb-5">Địa điểm du lịch</h2>
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 justify-content-center gy-5 list-image">
                         <a class="col item" href="#">
-                            <img src="style/images/god.jpg">
-                            <h4>Tượng Chúa Ki-tô</h4>
+                            <img src="style/images/god.jpg" alt="Chúa Giang Tay">
+                            <p>Tượng Chúa Ki-tô</p>
                         </a>
                         <a class="col item" href="#">
-                            <img src="style/images/travel-bien-long-hai.jpeg">
-                            <h4>Biển Long Hải</h4>
+                            <img src="style/images/travel-bien-long-hai.jpeg" alt="Long Hải">
+                            <p>Biển Long Hải</p>
                         </a>
                         <a class="col item" href="#">
-                            <img src="style/images/travel-bien-suoi-o.jpeg">
-                            <h4>Biển suối ồ</h4>
+                            <img src="style/images/travel-bien-suoi-o.jpeg" alt="Suối Ồ">
+                            <p>Biển suối ồ</p>
                         </a>
                         <a class="col item" href="#">
-                            <img src="style/images/travel-doi-con-heo.jpeg">
-                            <h4>Đồi con heo</h4>
+                            <img src="style/images/travel-doi-con-heo.jpeg" alt="Đồi con heo">
+                            <p>Đồi con heo</p>
                         </a>
                         <a class="col item" href="#">
-                            <img src="style/images/travel-dong-cuu.jpeg">
-                            <h4>Đồng cừu</h4>
+                            <img src="style/images/travel-dong-cuu.jpeg" alt="Đồng cừu">
+                            <p>Đồng cừu</p>
                         </a>
                         <a class="col item" href="#">
-                            <img src="style/images/travel-hon-ba.jpeg">
-                            <h4>Hòn bà</h4>
+                            <img src="style/images/travel-hon-ba.jpeg" alt="Hòn Bà">
+                            <p>Hòn bà</p>
                         </a>
                         <a class="col item" href="#">
-                            <img src="style/images/travel-hon-da-xanh.jpeg">
-                            <h4>Hòn đá xanh</h4>
+                            <img src="style/images/travel-hon-da-xanh.jpeg" alt="Hòn Đá Xanh">
+                            <p>Hòn đá xanh</p>
                         </a>
                         <a class="col item" href="#">
-                            <img src="style/images/travel-mui-nghinh-phong.jpeg">
-                            <h4>Mũi Nghinh Phong</h4>
+                            <img src="style/images/travel-mui-nghinh-phong.jpeg" alt="Nghinh Phong">
+                            <p>Mũi Nghinh Phong</p>
                         </a>
                         <a class="col item" href="#">
-                            <img src="style/images/tam-bun.png">
-                            <h4>Suối nước nóng Bình Châu</h4>
+                            <img src="style/images/tam-bun.png" alt="Suối nước nóng Bình Châu">
+                            <p>Suối nước nóng Bình Châu</p>
                         </a>
                         <a class="col item" href="#">
-                            <img src="style/images/bai_sau_vung_tau01.gif">
-                            <h4>Bãi sau</h4>
+                            <img src="style/images/bai_sau_vung_tau01.gif" alt="Bãi sau">
+                            <p>Bãi sau</p>
                         </a>
                     </div>
                 </section>
@@ -147,21 +147,21 @@
                     <div class="col-12 col-md-4 col-lg-4">
                         <div class="col-left-text col-md-left-text col-lg-left-text ">
                             <h3>Cần trợ giúp</h3>
-                            <h6>0978237004</h6>
-                            <h6>dien.tranxuan110594@gmail.com</h6>
+                            <p>0978237004</p>
+                            <p>dien.tranxuan110594@gmail.com</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-4 col-lg-4">
                         <div class="col-center-text col-md-center-text col-lg-center-text ">
                             <h3>Về chúng tôi</h3>
                             <a href="login.html">
-                                <h6>Đăng kí</h6>
+                                <p>Đăng kí</p>
                             </a>
                             <a href="register.html">
-                                <h6>Đăng nhập</h6>
+                                <p>Đăng nhập</p>
                             </a>
                             <a href="contact.html">
-                                <h6>Liên hệ</h6>
+                                <p>Liên hệ</p>
                             </a>
                         </div>
                     </div>
@@ -169,13 +169,13 @@
                         <div class="col-right-text col-md-right-text col-lg-right-text">
                             <h3>Khám phá</h3>
                             <a href="travel.html">
-                                <h6>Du lịch</h6>
+                                <p>Du lịch</p>
                             </a>
                             <a href="#">
-                                <h6>Phương tiện</h6>
+                                <p>Phương tiện</p>
                             </a>
                             <a href="food.html">
-                                <h6>Đặc sản</h6>
+                                <p>Đặc sản</p>
                             </a>
                         </div>
                     </div>

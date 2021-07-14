@@ -50,7 +50,7 @@ main {
     border-radius: 20px;
 }
 
-.list-image h4 {
+.list-image p {
     display: block;
     width: 90%;
     position: absolute;
@@ -58,6 +58,7 @@ main {
     text-decoration: none;
     text-align: center;
     font-weight: bold;
+    font-size: 25px;
     color: white;
     font-family: var(--font-image, Times);
 }
