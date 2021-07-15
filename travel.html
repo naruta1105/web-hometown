@@ -9,13 +9,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Add Javascript cho facebook-->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v11.0" nonce="32qANNPd"></script>
     <!--Improve SEO-->
     <title>Cảnh đẹp Vũng Tàu: muôn màu muôn vẻ</title>
     <meta name="description" conten="Thành phố biển Vũng Tàu có rất nhiêu cảnh đẹp từ núi, biển, đồng bằng và nhiều khu resort, du lịch để quý khách có thể lựa chọn và lưu được nhiều kỷ niệm đẹp">
     <!-- External CSS -->
     <link rel="stylesheet" href="style/header.css" />
-    <link rel="stylesheet" href="style/travel.css" />
+    <link rel="stylesheet" href="style/slideshow.css" />
     <link rel="stylesheet" href="style/footer.css" />
+    <link rel="stylesheet" href="style/travel.css" />
 </head>
 
 <body>
@@ -36,7 +40,6 @@
                 <ul class="d-none d-lg-flex col-lg-8 row g-0 nav1">
                     <li class="col-lg-3"><a href="home.html">Trang chủ</a></li>
                     <li class="col-lg-3 d-none"><a href="travel.html">Điểm đến</a></li>
-                    <li class="col-lg-2"><a href="#">Xe</a></li>
                     <li class="col-lg-3"><a href="food.html">Ẩm thực</a></li>
                     <li class="col-lg-3"><a href="contact.html">Liên Hệ</a></li>
                 </ul>
@@ -53,7 +56,6 @@
                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
                         <li><a class="dropdown-item active" href="home.html">Trang chủ</a></li>
                         <li><a class="dropdown-item d-none" href="travel.html">Điểm đến</a></li>
-                        <li><a class="dropdown-item" href="#">Xe</a></li>
                         <li><a class="dropdown-item" href="food.html">Ẩm thực</a></li>
                         <li><a class="dropdown-item" href="contact.html">Liên Hệ</a></li>
                         <li class="d-md-none">
@@ -94,7 +96,7 @@
                 </section>
                 <section class="py-5">
                     <h2 class="text-center mb-5">Địa điểm du lịch</h2>
-                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 justify-content-center gy-5 list-image">
+                    <div class="lg-show row row-cols-lg-5 justify-content-center g-3 list-image">
                         <a class="col item" href="#">
                             <img src="style/images/god.jpg" alt="Chúa Giang Tay">
                             <p>Tượng Chúa Ki-tô</p>
@@ -112,11 +114,11 @@
                             <p>Đồi con heo</p>
                         </a>
                         <a class="col item" href="#">
-                            <img src="style/images/travel-dong-cuu.jpeg" alt="Đồng cừu">
+                            <img src="style/images/travel_dong_cuu.jpg" alt="Đồng cừu">
                             <p>Đồng cừu</p>
                         </a>
                         <a class="col item" href="#">
-                            <img src="style/images/travel-hon-ba.jpeg" alt="Hòn Bà">
+                            <img src="style/images/travel_hon_ba.jpg" alt="Hòn Bà">
                             <p>Hòn bà</p>
                         </a>
                         <a class="col item" href="#">
@@ -128,12 +130,83 @@
                             <p>Mũi Nghinh Phong</p>
                         </a>
                         <a class="col item" href="#">
-                            <img src="style/images/tam-bun.png" alt="Suối nước nóng Bình Châu">
+                            <img src="style/images/tam_bun.jpg" alt="Suối nước nóng Bình Châu">
                             <p>Suối nước nóng Bình Châu</p>
                         </a>
                         <a class="col item" href="#">
                             <img src="style/images/bai_sau_vung_tau01.gif" alt="Bãi sau">
                             <p>Bãi sau</p>
+                        </a>
+                    </div>
+                    <div id="slide" class="sm-show carousel slide" data-bs-ride="carousel">
+                        <div class="container g-0 carousel-inner" role="listbox">
+                            <div class="list-image carousel-item active">
+                                <a class="col-12 col-md-4 item" href="#">
+                                    <img src="style/images/god.jpg" alt="Chúa Giang Tay">
+                                    <p>Tượng Chúa Ki-tô</p>
+                                </a>
+                            </div>
+                            <div class="list-image carousel-item">
+                                <a class="col-12 col-md-4 item" href="#">
+                                    <img src="style/images/travel-bien-long-hai.jpeg" alt="Long Hải">
+                                    <p>Biển Long Hải</p>
+                                </a>
+                            </div>
+                            <div class="list-image carousel-item">
+                                <a class="col-12 col-md-4 item" href="#">
+                                    <img src="style/images/travel-bien-suoi-o.jpeg" alt="Suối Ồ">
+                                    <p>Biển suối ồ</p>
+                                </a>
+                            </div>
+                            <div class="list-image carousel-item">
+                                <a class="col-12 col-md-4 item" href="#">
+                                    <img src="style/images/travel-doi-con-heo.jpeg" alt="Đồi con heo">
+                                    <p>Đồi con heo</p>
+                                </a>
+                            </div>
+                            <div class="list-image carousel-item">
+                                <a class="col-12 col-md-4 item" href="#">
+                                    <img src="style/images/travel_dong_cuu.jpg" alt="Đồng cừu">
+                                    <p>Đồng cừu</p>
+                                </a>
+                            </div>
+                            <div class="list-image carousel-item">
+                                <a class="col-12 col-md-4 item" href="#">
+                                    <img src="style/images/travel_hon_ba.jpg" alt="Hòn Bà">
+                                    <p>Hòn bà</p>
+                                </a>
+                            </div>
+                            <div class="list-image carousel-item">
+                                <a class="col-12 col-md-4 item" href="#">
+                                    <img src="style/images/travel-hon-da-xanh.jpeg" alt="Hòn Đá Xanh">
+                                    <p>Hòn đá xanh</p>
+                                </a>
+                            </div>
+                            <div class="list-image carousel-item">
+                                <a class="col-12 col-md-4 item" href="#">
+                                    <img src="style/images/travel-mui-nghinh-phong.jpeg" alt="Nghinh Phong">
+                                    <p>Mũi Nghinh Phong</p>
+                                </a>
+                            </div>
+                            <div class="list-image carousel-item">
+                                <a class="col-12 col-md-4 item" href="#">
+                                    <img src="style/images/tam_bun.jpg" alt="Suối nước nóng Bình Châu">
+                                    <p>Suối nước nóng Bình Châu</p>
+                                </a>
+                            </div>
+                            <div class="list-image carousel-item">
+                                <a class="col-12 col-md-4 item" href="#">
+                                    <img src="style/images/bai_sau_vung_tau01.gif" alt="Bãi sau">
+                                    <p>Bãi sau</p>
+                                </a>
+                            </div>
+
+                        </div>
+                        <a class="carousel-control-prev bg-transparent w-aut" href="#slide" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next bg-transparent w-aut" href="#slide" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         </a>
                     </div>
                 </section>
@@ -143,16 +216,14 @@
         <!--Footer-->
         <footer class="revealed">
             <div class="container">
-                <div class="row row-cols-3 row-cols-md-1">
-                    <div class="col-12 col-md-4 col-lg-4">
-                        <div class="col-left-text col-md-left-text col-lg-left-text ">
-                            <h3>Cần trợ giúp</h3>
-                            <p>0978237004</p>
-                            <p>dien.tranxuan110594@gmail.com</p>
+                <div class="row row-cols-1 row-cols-md-3">
+                    <div class="col-12 col-md-6 mb-5 mb-md-2">
+                        <div class="fb-page" data-href="https://www.facebook.com/yeuvt" data-tabs="timeline" data-width="767" data-height="100" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/yeuvt" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/yeuvt">Yêu Vũng Tàu</a></blockquote>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 col-lg-4">
-                        <div class="col-center-text col-md-center-text col-lg-center-text ">
+                    <div class="col-12 col-md-3">
+                        <div class="col-left-text col-md-left-text col-lg-left-text ">
                             <h3>Về chúng tôi</h3>
                             <a href="login.html">
                                 <p>Đăng kí</p>
@@ -165,14 +236,11 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 col-lg-4">
+                    <div class="col-12 col-md-3">
                         <div class="col-right-text col-md-right-text col-lg-right-text">
                             <h3>Khám phá</h3>
                             <a href="travel.html">
                                 <p>Du lịch</p>
-                            </a>
-                            <a href="#">
-                                <p>Phương tiện</p>
                             </a>
                             <a href="food.html">
                                 <p>Đặc sản</p>
@@ -228,6 +296,7 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/myscripts.js"></script>
 </body>
 
 </html>
